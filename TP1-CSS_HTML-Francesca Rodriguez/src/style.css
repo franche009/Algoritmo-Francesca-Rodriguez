@@ -1,0 +1,249 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color:rgb(202, 185, 158);
+  padding-top: 150px;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+/*ENCABEZADO*/
+.encabezado{
+    background-color: rgb(134, 124, 107);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-family: "Racing Sans One", sans-serif;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+/*TITULO*/
+.titulo{
+  font-family:"Racing Sans One", sans-serif;
+}
+
+h1{
+  color: rgb(236, 219, 192);
+  padding-left: 100px;
+  margin: 0;
+  font-size: 50px;
+}
+
+/*LINKS*/
+.links{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  list-style: none;
+  padding-right: 40px;
+}
+
+.links a{
+  display: inline-block;
+  color: rgb(236, 219, 192);
+  text-decoration: none;
+  font-family: "Racing Sans One", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  transition: transform 0.25s ease-in-out, color 0.25s ease;
+}
+
+.links a:hover{
+  color: rgb(57, 55, 52);
+}
+
+/*SOBRE MI*/
+.contenedor-padre {
+  display: flex;
+  gap: 30px; 
+  width: 100%;
+  background-color: rgba(236, 219, 192, 0.859);
+  border-radius: 15px;
+  padding: 30px;
+  max-width: 90%;
+  margin: 40px auto;
+}
+
+.division-hijo {
+  flex: 1; 
+  color: rgb(57, 55, 52);
+  text-align: center;
+  border-radius: 5px;
+  font-family:"Racing Sans One", sans-serif ;
+  font-size: 23px;  
+  max-width: 800px;
+  line-height: 1.6;
+  margin: auto;
+}
+
+.Sobre-mi img{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+/*HABILIDAD*/
+.Habilidad {
+  text-align: center;
+}
+
+.contenedor-habilidad {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.division-habilidad {
+  width: 180px;
+  height: 180px;
+  background-color:rgb(134, 124, 107);
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-family:"Racing Sans One", sans-serif;
+  font-size: 20px;
+  color: rgb(236, 219, 192);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.division-habilidad:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 10px 25px rgba(0,0,0,0.4);
+}
+
+.division-habilidad img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+/* PROYECTOS */
+.Proyectos{
+  text-align: center;
+}
+
+.grid-proyectos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  padding: 40px;
+}
+
+.card {
+  background-color: rgb(236, 219, 192);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.08);
+  box-shadow: 0px 10px 25px rgba(0,0,0,0.3);
+}
+
+.card span {
+  display: block;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.card a {
+  text-decoration: none;
+  background-color: rgb(134, 124, 107);
+  color: white;
+  padding: 8px 15px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+/* FOOTER */
+footer {
+  background-color: rgb(134, 124, 107);
+  color: rgb(236, 219, 192);
+  text-align: center;
+  padding: 30px;
+  margin-top: 50px;
+}
+
+.redes {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; 
+}
+
+.redes a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 10px 0;
+  color: rgb(236, 219, 192);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.redes img {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+}
+
+/*CARRUSEL*/
+.carrusel {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carrusel-track {
+  display: flex;
+  animation: mover 15s infinite;
+}
+
+.carrusel-track img {
+  width: 100%;
+  flex-shrink: 0;
+  height: 400%;
+  object-fit: cover;
+  object-position: center 30%;
+}
+
+@keyframes mover {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(0); }
+
+  25% { transform: translateX(-100%); }
+  45% { transform: translateX(-100%); }
+
+  50% { transform: translateX(-200%); }
+  70% { transform: translateX(-200%); }
+
+  75% { transform: translateX(-300%); }
+  95% { transform: translateX(-300%); }
+
+  100% { transform: translateX(-400%); }
+}
