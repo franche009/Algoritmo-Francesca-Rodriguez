@@ -1,0 +1,37 @@
+#btnVerificarTemp{
+  justify-content: space-between;
+   text-align: center;
+   font-family: "Fraunces", serif;
+   color: #0c3b35;
+   text-decoration: dashed;
+   font-size: 18px;
+   border-radius: 40px;
+   border: 2px solid #000000;
+   background-color: rgb(117, 158, 155);
+   padding: 6px;
+ }
+
+#frase{
+    justify-content: space-between;
+   text-align: center;
+   font-family: "Fraunces", serif;
+   color: #0c3b35;
+   text-decoration: dashed;
+   font-size: 18px;
+   border-radius: 40px;
+   padding: 6px;
+}
+
+#resultadoTemp{
+  justify-content: space-between;
+   text-align: center;
+   font-family: "Fraunces", serif;
+   color: #0c3b35;
+   text-decoration: dashed;
+   font-size: 18px;
+   border-radius: 40px;
+   border: 2px solid #000000;
+   background-color: rgb(117, 158, 155);
+   padding: 6px;
+
+}
