@@ -1,0 +1,21 @@
+.preguntas{
+    justify-content: space-between;
+   font-family: "Fraunces", serif;
+   color: #1c7581;
+   text-decoration: dashed;
+   font-size: 25px;
+   padding: 6px;
+}
+
+#boton{
+    justify-content: space-between;
+   text-align: center;
+   font-family: "Fraunces", serif;
+   color: #000000;
+   text-decoration: dashed;
+   font-size: 20px;
+   border-radius: 10px;
+   border:  rgb(60, 56, 100);
+   background-color: rgb(16, 109, 167);
+   padding: 6px;
+}

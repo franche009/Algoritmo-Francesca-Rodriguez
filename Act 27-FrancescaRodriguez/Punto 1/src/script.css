@@ -1,0 +1,12 @@
+.boton{
+    justify-content: space-between;
+   text-align: center;
+   font-family: "Fraunces", serif;
+   color: #000000;
+   text-decoration: dashed;
+   font-size: 35px;
+   border-radius: 10px;
+   border:  rgb(60, 56, 100);
+   background-color: rgb(161, 154, 230);
+   padding: 6px;
+}

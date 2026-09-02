@@ -1,0 +1,9 @@
+#frase{
+    justify-content: space-between;
+   text-align: center;
+   font-family: "Fraunces", serif;
+   color: #1c7581;
+   text-decoration: dashed;
+   font-size: 25px;
+   padding: 6px;
+}

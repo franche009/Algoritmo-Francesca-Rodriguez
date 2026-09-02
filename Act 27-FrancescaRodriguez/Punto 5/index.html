@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./src/script.js" defer></script>
+    <link rel="stylesheet" href="./src/script.css">
+</head>
+<body>
+   <form>
+        <label class="titulos">Procesador:</label>
+        <select id="procesador">
+            <option value="480">Intel I3 - $480</option>
+            <option value="820">Intel I5 - $820</option>
+            <option value="1100">Intel I7 - $1100</option>
+        </select><br>
+
+        <label class="titulos">Monitor:</label>
+        <select id="monitor">
+            <option value="225">Samsung 19' - $225</option>
+            <option value="470">Samsung 24' - $470</option>
+            <option value="710">Samsung 27' - $710</option>
+        </select><br>
+
+        <label class="titulos">Disco:</label>
+        <select id="disco">
+            <option value="400">500 Gb - $400</option>
+            <option value="480">1 Tb - $480</option>
+            <option value="580">3 Tb - $580</option>
+        </select><br>
+
+        <label class="titulos">Total:</label> <input type="text" id="totalPC" readonly><br>
+        <input type="button" value="Calcular" onclick="calcularPresupuesto()" id="boton">
+    </form> 
+</body>
+</html>
